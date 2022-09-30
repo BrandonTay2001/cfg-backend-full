@@ -24,4 +24,4 @@ if __name__ == "__main__":
     sock.bind(('localhost', 8080))  # defaulted to port 5000
     port = sock.getsockname()[1]
     sock.close()
-    app.run(port=port)
+    app.run(port=port, debug=True)
